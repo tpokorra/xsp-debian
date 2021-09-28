@@ -2,7 +2,7 @@ Source: xsp
 Section: web
 Priority: optional
 Maintainer: Debian Mono Group <pkg-mono-group@lists.alioth.debian.org>
-Uploaders: Dylan R. E. Moonfire <debian@mfgames.com>, Mirco Bauer <meebey@debian.org>, Jo Shields <directhex@apebox.org>
+Uploaders: Dylan R. E. Moonfire <debian@mfgames.com>, Mirco Bauer <meebey@debian.org>, Jo Shields <directhex@apebox.org>, Timotheus Pokorra <timotheus.pokorra@solidcharity.com>
 Build-Depends: debhelper (>= 10~),
  po-debconf,
  cli-common-dev (>= 0.8~),

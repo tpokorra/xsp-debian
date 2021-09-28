@@ -1,6 +1,6 @@
-xsp (4.7.1-0.1) unstable; urgency=medium
+xsp (4.7.1-1) unstable; urgency=medium
 
-  * NMU upgrade to 4.7.1
+  * upgrade to 4.7.1
 
  -- Timotheus Pokorra <timotheus.pokorra@solidcharity.com>  Tue, 28 Sep 2021 15:45:00 +0200
 
