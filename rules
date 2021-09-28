@@ -18,11 +18,6 @@ UPVERSION = $(shell echo $(VERSION) | sed 's,-.*,,' | sed 's,+dfsg.*,,')
 NEXT_UPVERSION = $(shell perl -e '$$_=pop; s/(\d+)$$/$$1+1/e; print' $(UPVERSION))
 DEB_SOURCE_NAME = $(shell dpkg-parsechangelog -l$(DEBIAN_DIR)/changelog | grep ^Source | cut -d" " -f2)
 
-override_dh_autoreconf:
-	# by not running dh_autoreconf we avoid these errors:
-	# libtoolize: Consider adding '-I build/m4' to ACLOCAL_AMFLAGS in Makefile.am.
-	# Makefile.am:8: error: BUILD_DOCS does not appear in AM_CONDITIONAL
-
 override_dh_auto_build:
 	dh_auto_build
 	pod2man --section=8 \
@@ -79,4 +74,4 @@ override_dh_gencontrol:
 	dh_gencontrol -- -Vmono-abi-comp-version=$(MONO_ABI_COMP_VERSION)
 
 %:
-	dh $@ --with cli
+	dh $@ --without autoreconf --with cli
