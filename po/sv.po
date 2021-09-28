@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xsp_1.2.5-2.1_sv\n"
 "Report-Msgid-Bugs-To: xsp@packages.debian.org\n"
-"POT-Creation-Date: 2011-12-21 07:13+0100\n"
+"POT-Creation-Date: 2021-09-28 17:17+0200\n"
 "PO-Revision-Date: 2012-03-04 23:58+0100\n"
 "Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
 "Language-Team: swedish <debian-l10n-swedish@lists.debian.org>\n"
@@ -43,22 +43,65 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../mono-apache-server4.templates:2001 ../mono-apache-server2.templates:2001
-#: ../mono-xsp4.templates:4001 ../mono-xsp2.templates:4001
+#: ../mono-apache-server4.templates:2001 ../mono-xsp4.templates:4001
 msgid "ASP.NET 1.0 support removed"
 msgstr "ASP.NET 1.0 stöd borttaget"
 
 #. Type: note
 #. Description
-#: ../mono-apache-server4.templates:2001 ../mono-apache-server2.templates:2001
+#: ../mono-apache-server4.templates:2001
+#, fuzzy
+#| msgid ""
+#| "You appear to have some ASP.NET 1.0 sites configured in /etc/mono-"
+#| "server1. Support for the 1.0 profile has been removed from Mono 2.8 and "
+#| "above, and you are no longer able to serve ASP.NET 1.0 sites. You must "
+#| "reconfigure XSP to serve these sites using either 2.0 or 4.0 profiles, "
+#| "assuming your application is compatible. Please see mono-server2-admin(8) "
+#| "or mono-server4-admin(8) to see how to regenerate a configuration for use "
+#| "with 2.0 or 4.0 profiles."
 msgid ""
-"You appear to have some ASP.NET 1.0 sites configured in /etc/mono-server1. "
+"You appear to have some ASP.NET 1.0 sites configured in /etc/mono-server. "
 "Support for the 1.0 profile has been removed from Mono 2.8 and above, and "
 "you are no longer able to serve ASP.NET 1.0 sites. You must reconfigure XSP "
-"to serve these sites using either 2.0 or 4.0 profiles, assuming your "
-"application is compatible. Please see mono-server2-admin(8) or mono-server4-"
-"admin(8) to see how to regenerate a configuration for use with 2.0 or 4.0 "
-"profiles."
+"to serve these sites using the 4.0 profile, assuming your application is "
+"compatible. Please see mono-server4-admin(8) to see how to regenerate a "
+"configuration for use with the 4.0 profile."
+msgstr ""
+"Det verkar som att du har några ASP.NET 1.0-platser angivna i /etc/mono-"
+"server1. Stöd för 1.0-profilen har tagits bort i och med Mono 2.8 och senare "
+"och du kan inte längre servera ASP-NET 1.0-platser. DU måste ställa in XSP "
+"att servera dessa platser antingen som 2.0- eller 4.0-profiler, under "
+"förutsättning att din applikation är kompatibel. Läs mer i manualsidan mono-"
+"server2-admin(8) eller mono-server4-admin(8) för instruktioner om hur "
+"inställningen för 2.0- eller 4.0-profilerna kan skapas."
+
+#. Type: note
+#. Description
+#: ../mono-apache-server4.templates:3001 ../mono-xsp4.templates:5001
+#, fuzzy
+#| msgid "ASP.NET 1.0 support removed"
+msgid "ASP.NET 2.0 support removed"
+msgstr "ASP.NET 1.0 stöd borttaget"
+
+#. Type: note
+#. Description
+#: ../mono-apache-server4.templates:3001
+#, fuzzy
+#| msgid ""
+#| "You appear to have some ASP.NET 1.0 sites configured in /etc/mono-"
+#| "server1. Support for the 1.0 profile has been removed from Mono 2.8 and "
+#| "above, and you are no longer able to serve ASP.NET 1.0 sites. You must "
+#| "reconfigure XSP to serve these sites using either 2.0 or 4.0 profiles, "
+#| "assuming your application is compatible. Please see mono-server2-admin(8) "
+#| "or mono-server4-admin(8) to see how to regenerate a configuration for use "
+#| "with 2.0 or 4.0 profiles."
+msgid ""
+"You appear to have some ASP.NET 2.0 sites configured in /etc/mono-server. "
+"Support for the 1.0 profile has been removed from Mono 4.0 and above, and "
+"you are no longer able to serve ASP.NET 2.0 sites. You must reconfigure XSP "
+"to serve these sites using the 4.0 profile, assuming your application is "
+"compatible. Please see mono-server4-admin(8) to see how to regenerate a "
+"configuration for use with the 4.0 profile."
 msgstr ""
 "Det verkar som att du har några ASP.NET 1.0-platser angivna i /etc/mono-"
 "server1. Stöd för 1.0-profilen har tagits bort i och med Mono 2.8 och senare "
@@ -70,30 +113,7 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../mono-apache-server2.templates:1001
-msgid "Let mono-apache-server2 restart Apache?"
-msgstr "Ska mono-apache-server2 starta om Apache?"
-
-#. Type: boolean
-#. Description
-#: ../mono-apache-server2.templates:1001
-msgid ""
-"The Debian version of mono-apache-server2 includes a mono-server2-update "
-"script that creates a configuration file for Apache to start the ASP.NET "
-"applications, and mono-server2-update can restart Apache if there's a new "
-"configuration file (/etc/mono-server2/mono-server2-hosts.conf). If this is "
-"true, then Apache will be restarted when there is a new mono-server2-hosts."
-"conf file."
-msgstr ""
-"Debian-versionen av mono-apache-server2 inkluderar ett skript, mono-server2-"
-"update,som skapar en konfigurationsfil för Apache för att starta ASP.NET-"
-"applikationer. Skriptet mono-server2-update kan starta om Apache om det "
-"finns en ny konfigurationsfil (/etc/mono-server2/mono-server-hosts.conf). "
-"Apache kommer att startas om när det finns en ny mono-server2-hosts.conf-fil."
-
-#. Type: boolean
-#. Description
-#: ../mono-xsp4.templates:1001 ../mono-xsp2.templates:1001
+#: ../mono-xsp4.templates:1001
 msgid "Start on boot?"
 msgstr "Starta vid uppstart av systemet?"
 
@@ -108,7 +128,7 @@ msgstr ""
 
 #. Type: string
 #. Description
-#: ../mono-xsp4.templates:2001 ../mono-xsp2.templates:2001
+#: ../mono-xsp4.templates:2001
 msgid "Bind to address:"
 msgstr "Vvilken adress ska användas?"
 
@@ -127,13 +147,13 @@ msgstr ""
 
 #. Type: string
 #. Description
-#: ../mono-xsp4.templates:3001 ../mono-xsp2.templates:3001
+#: ../mono-xsp4.templates:3001
 msgid "Bind to port:"
 msgstr "Vilken port ska användas?"
 
 #. Type: string
 #. Description
-#: ../mono-xsp4.templates:3001 ../mono-xsp2.templates:3001
+#: ../mono-xsp4.templates:3001
 msgid ""
 "XSP is bound to a specific port on the server. Common values are 80, 8080, "
 "or 8081."
@@ -143,15 +163,23 @@ msgstr ""
 
 #. Type: note
 #. Description
-#: ../mono-xsp4.templates:4001 ../mono-xsp2.templates:4001
+#: ../mono-xsp4.templates:4001
+#, fuzzy
+#| msgid ""
+#| "You appear to have some ASP.NET 1.0 sites configured in /etc/mono-"
+#| "server1. Support for the 1.0 profile has been removed from Mono 2.8 and "
+#| "above, and you are no longer able to serve ASP.NET 1.0 sites. You must "
+#| "reconfigure XSP to serve these sites using either 2.0 or 4.0 profiles, "
+#| "assuming your application is compatible. Please see mono-xsp2-admin(8) or "
+#| "mono-xsp4-admin(8) to see how to regenerate a configuration for use with "
+#| "2.0 or 4.0 profiles."
 msgid ""
-"You appear to have some ASP.NET 1.0 sites configured in /etc/mono-server1. "
+"You appear to have some ASP.NET 1.0 sites configured in /etc/mono-server. "
 "Support for the 1.0 profile has been removed from Mono 2.8 and above, and "
 "you are no longer able to serve ASP.NET 1.0 sites. You must reconfigure XSP "
-"to serve these sites using either 2.0 or 4.0 profiles, assuming your "
-"application is compatible. Please see mono-xsp2-admin(8) or mono-xsp4-admin"
-"(8) to see how to regenerate a configuration for use with 2.0 or 4.0 "
-"profiles."
+"to serve these sites using the 4.0 profile, assuming your application is "
+"compatible. Please see mono-xsp4-admin(8) to see how to regenerate a "
+"configuration for use with the 4.0 profile."
 msgstr ""
 "Det verkar som att du har några ASP.NET 1.0-platser angivna i /etc/mono-"
 "server1. Stöd för 1.0-profilen har tagits bort i och med Mono 2.8 och senare "
@@ -161,23 +189,64 @@ msgstr ""
 "xsp2-admin(8) eller mono-xsp4-admin(8) för instruktioner om hur "
 "inställningen för 2.0- eller 4.0-profilerna kan skapas."
 
-#. Type: boolean
+#. Type: note
 #. Description
-#: ../mono-xsp2.templates:1001
+#: ../mono-xsp4.templates:5001
+#, fuzzy
+#| msgid ""
+#| "You appear to have some ASP.NET 1.0 sites configured in /etc/mono-"
+#| "server1. Support for the 1.0 profile has been removed from Mono 2.8 and "
+#| "above, and you are no longer able to serve ASP.NET 1.0 sites. You must "
+#| "reconfigure XSP to serve these sites using either 2.0 or 4.0 profiles, "
+#| "assuming your application is compatible. Please see mono-xsp2-admin(8) or "
+#| "mono-xsp4-admin(8) to see how to regenerate a configuration for use with "
+#| "2.0 or 4.0 profiles."
 msgid ""
-"If this is true, then XSP2 will automatically start when the computer is "
-"turned on."
-msgstr "I så fall kommer XSP2 starta automatiskt när datorn startar."
-
-#. Type: string
-#. Description
-#: ../mono-xsp2.templates:2001
-msgid ""
-"To function properly, XSP2 needs to be bound to an IP address. The default "
-"(\"0.0.0.0\") binds to all addresses of the server, but a specific port can "
-"be selected. To use XSP2 only locally, use \"127.0.0.1\" for the address."
+"You appear to have some ASP.NET 2.0 sites configured in /etc/mono-server2. "
+"Support for the 2.0 profile has been removed from Mono 4.0 and above, and "
+"you are no longer able to serve ASP.NET 2.0 sites. You must reconfigure XSP "
+"to serve these sites using the 4.0 profile, assuming your application is "
+"compatible. Please see mono-xsp4-admin(8) to see how to regenerate a "
+"configuration for use with the 4.0 profile."
 msgstr ""
-"XSP2 fungerar inte korrekt utan att ställas in för att använda en särskild "
-"IP-adress. Standardvärdet är \"0.0.0.0\" och motsvarar alla förekommande IP-"
-"adresser i datorn för att sedan begränsa det till en särskild port. För att "
-"endast använda XSP2 lokalt anger du 2127.0.0.1\"."
+"Det verkar som att du har några ASP.NET 1.0-platser angivna i /etc/mono-"
+"server1. Stöd för 1.0-profilen har tagits bort i och med Mono 2.8 och senare "
+"och du kan inte längre servera ASP-NET 1.0-platser. DU måste ställa in XSP "
+"att servera dessa platser antingen som 2.0- eller 4.0-profiler, under "
+"förutsättning att din applikation är kompatibel. Läs mer i manualsidan mono-"
+"xsp2-admin(8) eller mono-xsp4-admin(8) för instruktioner om hur "
+"inställningen för 2.0- eller 4.0-profilerna kan skapas."
+
+#~ msgid "Let mono-apache-server2 restart Apache?"
+#~ msgstr "Ska mono-apache-server2 starta om Apache?"
+
+#~ msgid ""
+#~ "The Debian version of mono-apache-server2 includes a mono-server2-update "
+#~ "script that creates a configuration file for Apache to start the ASP.NET "
+#~ "applications, and mono-server2-update can restart Apache if there's a new "
+#~ "configuration file (/etc/mono-server2/mono-server2-hosts.conf). If this "
+#~ "is true, then Apache will be restarted when there is a new mono-server2-"
+#~ "hosts.conf file."
+#~ msgstr ""
+#~ "Debian-versionen av mono-apache-server2 inkluderar ett skript, mono-"
+#~ "server2-update,som skapar en konfigurationsfil för Apache för att starta "
+#~ "ASP.NET-applikationer. Skriptet mono-server2-update kan starta om Apache "
+#~ "om det finns en ny konfigurationsfil (/etc/mono-server2/mono-server-hosts."
+#~ "conf). Apache kommer att startas om när det finns en ny mono-server2-"
+#~ "hosts.conf-fil."
+
+#~ msgid ""
+#~ "If this is true, then XSP2 will automatically start when the computer is "
+#~ "turned on."
+#~ msgstr "I så fall kommer XSP2 starta automatiskt när datorn startar."
+
+#~ msgid ""
+#~ "To function properly, XSP2 needs to be bound to an IP address. The "
+#~ "default (\"0.0.0.0\") binds to all addresses of the server, but a "
+#~ "specific port can be selected. To use XSP2 only locally, use "
+#~ "\"127.0.0.1\" for the address."
+#~ msgstr ""
+#~ "XSP2 fungerar inte korrekt utan att ställas in för att använda en "
+#~ "särskild IP-adress. Standardvärdet är \"0.0.0.0\" och motsvarar alla "
+#~ "förekommande IP-adresser i datorn för att sedan begränsa det till en "
+#~ "särskild port. För att endast använda XSP2 lokalt anger du 2127.0.0.1\"."

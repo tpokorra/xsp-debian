@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xsp 2.4.3-3\n"
 "Report-Msgid-Bugs-To: xsp@packages.debian.org\n"
-"POT-Creation-Date: 2015-11-30 15:16+0000\n"
+"POT-Creation-Date: 2021-09-28 17:17+0200\n"
 "PO-Revision-Date: 2015-12-11 09:54+0200\n"
 "Last-Translator: Beatrice Torracca <beatricet@libero.it>\n"
 "Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
@@ -52,14 +52,6 @@ msgstr "Supporto a ASP.NET 1.0 rimosso"
 #. Type: note
 #. Description
 #: ../mono-apache-server4.templates:2001
-#| msgid ""
-#| "You appear to have some ASP.NET 1.0 sites configured in /etc/mono-"
-#| "server1. Support for the 1.0 profile has been removed from Mono 2.8 and "
-#| "above, and you are no longer able to serve ASP.NET 1.0 sites. You must "
-#| "reconfigure XSP to serve these sites using either 2.0 or 4.0 profiles, "
-#| "assuming your application is compatible. Please see mono-server2-admin(8) "
-#| "or mono-server4-admin(8) to see how to regenerate a configuration for use "
-#| "with 2.0 or 4.0 profiles."
 msgid ""
 "You appear to have some ASP.NET 1.0 sites configured in /etc/mono-server. "
 "Support for the 1.0 profile has been removed from Mono 2.8 and above, and "
@@ -79,21 +71,12 @@ msgstr ""
 #. Type: note
 #. Description
 #: ../mono-apache-server4.templates:3001 ../mono-xsp4.templates:5001
-#| msgid "ASP.NET 1.0 support removed"
 msgid "ASP.NET 2.0 support removed"
 msgstr "Supporto a ASP.NET 2.0 rimosso"
 
 #. Type: note
 #. Description
 #: ../mono-apache-server4.templates:3001
-#| msgid ""
-#| "You appear to have some ASP.NET 1.0 sites configured in /etc/mono-"
-#| "server1. Support for the 1.0 profile has been removed from Mono 2.8 and "
-#| "above, and you are no longer able to serve ASP.NET 1.0 sites. You must "
-#| "reconfigure XSP to serve these sites using either 2.0 or 4.0 profiles, "
-#| "assuming your application is compatible. Please see mono-server2-admin(8) "
-#| "or mono-server4-admin(8) to see how to regenerate a configuration for use "
-#| "with 2.0 or 4.0 profiles."
 msgid ""
 "You appear to have some ASP.NET 2.0 sites configured in /etc/mono-server. "
 "Support for the 1.0 profile has been removed from Mono 4.0 and above, and "
