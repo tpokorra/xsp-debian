@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 10~),
  mono-devel (>= 3),
  monodoc-base (>= 3),
  libnunit-cil-dev
-Standards-Version: 3.9.1
+Standards-Version: 4.5.1
 Homepage: https://www.mono-project.com/ASP.NET
 Vcs-Git: https://salsa.debian.org/dotnet-team/xsp.git
 Vcs-Browser: https://salsa.debian.org/dotnet-team/xsp

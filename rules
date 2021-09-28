@@ -80,4 +80,3 @@ override_dh_gencontrol:
 
 %:
 	dh $@ --with cli
-
