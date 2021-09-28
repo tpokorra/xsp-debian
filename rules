@@ -47,7 +47,7 @@ override_dh_auto_build:
 
 override_dh_clean:
 	rm -f $(CURDIR)/debian/*.8 $(CURDIR)/debian/*.1
-	dh_clean 
+	dh_clean
 
 override_dh_installman:
 	# Make version three variants on the manpages

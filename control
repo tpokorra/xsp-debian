@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Debian Mono Group <pkg-mono-group@lists.alioth.debian.org>
 Uploaders: Dylan R. E. Moonfire <debian@mfgames.com>, Mirco Bauer <meebey@debian.org>, Jo Shields <directhex@apebox.org>, Timotheus Pokorra <timotheus.pokorra@solidcharity.com>
 Build-Depends: debhelper (>= 10~),
- po-debconf, 
- autotools-dev, 
+ po-debconf,
+ autotools-dev,
  cli-common-dev (>= 0.8~),
  mono-devel (>= 3),
  monodoc-base (>= 3),
@@ -22,7 +22,7 @@ Conflicts: mono-utils (<= 1.1.9.2-1), mono-xsp-base
 Replaces: mono-xsp-base
 Description: debhelper add-on to handle ASP.NET sites
  dh-xsp provides a debhelper sequence addon named 'xsp' and the dh_installxsp
- command, which allows ASP.NET sites to be automatically configured on 
+ command, which allows ASP.NET sites to be automatically configured on
  installation.
 
 Package: mono-xsp4-base
@@ -37,8 +37,8 @@ Package: mono-xsp4
 Architecture: all
 Depends: ${misc:Depends}, ${cli:Depends}, mono-xsp4-base (= ${source:Version}), procps
 Description: simple web server to run ASP.NET 4.0 applications
- XSP is a simple web server written in C# that can be used to run your 
- ASP.NET 4.0 applications. 
+ XSP is a simple web server written in C# that can be used to run your
+ ASP.NET 4.0 applications.
  .
  This is the standalone ASP.NET web server. If you want to run ASP.NET
  applications with Apache, look at mono-apache-server.
@@ -47,11 +47,11 @@ Package: mono-xsp
 Architecture: all
 Depends: mono-xsp4 (= ${source:Version}), ${misc:Depends}
 Description: simple web server to run ASP.NET applications - default version
- XSP is a simple web server written in C# that can be used to run your 
- ASP.NET applications. 
+ XSP is a simple web server written in C# that can be used to run your
+ ASP.NET applications.
  .
- This is a metapackage to pull in the standalone ASP.NET web server. 
- If you want to run ASP.NET applications with Apache, look at 
+ This is a metapackage to pull in the standalone ASP.NET web server.
+ If you want to run ASP.NET applications with Apache, look at
  mono-apache-server.
 
 Package: asp.net-examples
@@ -113,8 +113,8 @@ Architecture: all
 Replaces: mono-fastcgi-server1
 Depends: libfpm-helper0 (>= ${source:Version}), ${shlibs:Depends}, ${misc:Depends}, ${cli:Depends}, mono-xsp4-base (= ${source:Version}), perl
 Description: ASP.NET 4.0 backend for FastCGI webservers
- mono-fastcgi-server contains the backend for FastCGI. It lets you run 
- ASP.NET web applications via HTTP servers such as Lighttpd or Apache. 
+ mono-fastcgi-server contains the backend for FastCGI. It lets you run
+ ASP.NET web applications via HTTP servers such as Lighttpd or Apache.
  The FastCGI webserver shouldbe configured to run fastcgi-mono-server to
  parse and compile the aspx code.
  .
