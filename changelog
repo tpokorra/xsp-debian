@@ -824,7 +824,7 @@ xsp (1.0.5-1) unstable; urgency=low
     + Removed some old maintainer scripts that are no longer in use.
     + Lots of one-line cleanups.
 
- -- Debian Mono Group <pkg-mono-group@lists.alioth.debian.org>  Tue, 09 Dec 2004 09:58:12 -0600
+ -- Debian Mono Group <pkg-mono-group@lists.alioth.debian.org>  Thu, 09 Dec 2004 09:58:12 -0600
 
 xsp (1.0-3) unstable; urgency=low
 
@@ -940,7 +940,7 @@ xsp (0.12-2) unstable; urgency=low
   * Fixed a bug int he admin scripts, syntax error :-(
   * Also added the two actions to the admin scripts: add and remove
 
- -- Pablo Fischer <pablo@pablo.com.mx>  Fri, 20 May 2004 15:07:42 -0600
+ -- Pablo Fischer <pablo@pablo.com.mx>  Thu, 20 May 2004 15:07:42 -0600
 
 xsp (0.12-1) unstable; urgency=low
 
@@ -951,7 +951,7 @@ xsp (0.12-1) unstable; urgency=low
   * Added a admin script for both mono-server and xsp package
   * rules file should check for dh_installxsp script inside debian/ directory
 
- -- Pablo Fischer <pablo@pablo.com.mx>  Fri, 20 May 2004 23:21:13 -0600
+ -- Pablo Fischer <pablo@pablo.com.mx>  Thu, 20 May 2004 23:21:13 -0600
 
 xsp (0.9-15) unstable; urgency=low
 
@@ -1093,7 +1093,7 @@ xsp (0.9-4) unstable; urgency=low
     + Also, added the prerm script for mono-xsp and mono-server.
     + And the files to manage the VirtualHost as exim does with a conf.d file
 
- -- Pablo Fischer <pablo@pablo.com.mx>  Wed, 28 Feb 2004 22:16:13 -0600
+ -- Pablo Fischer <pablo@pablo.com.mx>  Sat, 28 Feb 2004 22:16:13 -0600
 
 xsp (0.9-3) unstable; urgency=low
 
@@ -1106,7 +1106,7 @@ xsp (0.9-3) unstable; urgency=low
     + Fixed the Depends of the package, we moved the mono-vhostmanager depend from
     asp.net-examples to mono-xsp and mono-server.
 
- -- Pablo Fischer <pablo@pablo.com.mx>  Wed, 28 Feb 2004 22:16:13 -0600
+ -- Pablo Fischer <pablo@pablo.com.mx>  Sat, 28 Feb 2004 22:16:13 -0600
 
 xsp (0.9-2) unstable; urgency=low
 
