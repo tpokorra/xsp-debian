@@ -1,0 +1,19 @@
+Description: fix autoreconf
+ The upstream package does not work with autoreconf.
+ .
+ xsp (4.7.1-0.1) unstable; urgency=medium
+ .
+   * fixing issue with autoreconf
+Author: Timotheus Pokorra <timotheus.pokorra@solidcharity.com>
+
+---
+--- a/Makefile.am	2021-09-28 17:31:54.711230345 +0200
++++ b/Makefile.am	2021-09-28 17:32:01.543174956 +0200
+@@ -1,5 +1,5 @@
+ SUBDIRS=build man src test tools scripts packaging lib shim
+-ACLOCAL_AMFLAGS += -I build/m4
++ACLOCAL_AMFLAGS = -I build/m4 -I build/m4/shamrock -I build/m4/shave
+ 
+ if UNITTESTS
+ SUBDIRS += unittests
+
