@@ -5,7 +5,6 @@ Maintainer: Debian Mono Group <pkg-mono-group@lists.alioth.debian.org>
 Uploaders: Dylan R. E. Moonfire <debian@mfgames.com>, Mirco Bauer <meebey@debian.org>, Jo Shields <directhex@apebox.org>
 Build-Depends: debhelper (>= 10~),
  po-debconf,
- autotools-dev,
  cli-common-dev (>= 0.8~),
  mono-devel (>= 3),
  monodoc-base (>= 3),
