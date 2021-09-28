@@ -1,5 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: xsp
+Upstream-Contact: Gonzalo Paniagua Javier <gonzalo@ximian.com>
 Source: https://github.com/mono/xsp
 
 Files: *
@@ -17,14 +18,6 @@ Copyright: 2002 Daniel Lopez Ridruejo.
 License: MIT
 
 Files: src/Mono.WebServer.Apache/*
-Copyright: 2004-2009 Novell, Inc. (http://www.novell.com)
-License: MIT
-
-Files: src/Mono.WebServer.Apache/Request.cs
-Files: src/Mono.WebServer.Apache/RequestReader.cs
-Files: src/Mono.WebServer.Apache/WorkerRequest.cs
-Files: src/Mono.WebServer.Apache/ModMonoRequest.cs
-Files: src/Mono.WebServer.Apache/ModMonoWorkerRequest.cs
 Copyright: 2002 Daniel Lopez Ridruejo.
    2002-2009 Novell, Inc. (http://www.novell.com)
 License: MIT
